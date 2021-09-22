@@ -20,5 +20,12 @@ module.exports = {
     }),
     new CopyWebpackPlugin([{ from: "./src/index.html", to: "index.html"}])
   ],
+  node : {
+
+    fs:'empty',
+    
+    net:'empty',
+    
+  }, 
   devServer: { contentBase: path.join(__dirname, "dist"), compress: true }
 }
